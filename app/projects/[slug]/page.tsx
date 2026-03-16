@@ -1,6 +1,10 @@
 import { projects } from "@/data/projects";
 
-export default function ProjectPage({ params }: any) {
+interface ProjectParams{
+  slug: string;
+}
+
+export default function ProjectPage({ params }: ProjectParams) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) return <div>Project not found</div>;
