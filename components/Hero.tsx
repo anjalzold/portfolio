@@ -42,7 +42,7 @@ export default function Hero() {
 
       <div className="hidden md:block">
         <img
-          src="/profile.jpeg"
+          src="/Profile.jpeg"
           className="w-[360px] object-cover rounded-xl"
         />
       </div>
